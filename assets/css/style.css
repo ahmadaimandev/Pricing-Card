@@ -1,0 +1,78 @@
+:root{
+    --grey-color: #eee;
+    --blue-background-color: #084c83;
+    --light-color: #fff;
+    --blue-button-color: #005acf;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+.title {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h2 {
+    margin: 10px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+p {
+    margin-top: -10px;
+    font-size: 16px;
+    text-transform:uppercase;
+}
+.colomn {
+    float: left;
+    width: 33.3%;
+    padding: 8px;
+}
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.price:hover {
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+}
+.price .header {
+    background-color: var(--blue-background-color);
+    color: var(--light-color);
+    font-size: 24px;
+}
+.price li {
+    border-bottom: 1px solid var(--grey-color);
+    padding: 20px;
+    text-align: center;
+}
+.price .grey {
+    background-color: var(--grey-color);
+    font-size: 20px;
+}
+.button {
+    background-color: var(--blue-button-color);
+    border: none;
+    color: var(--light-color);
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 15px;
+}
+.button:hover {
+    background-color: #0d528a;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+    .colomn {
+        width: 100%;
+    }
+}
